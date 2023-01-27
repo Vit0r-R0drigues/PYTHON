@@ -1,7 +1,7 @@
-import emoji
 import random
 import math
 import pygame
+import emoji
 
 
 '''print(emoji.emojize("ola, mundo :earth_americas:", language='alias'))'''
