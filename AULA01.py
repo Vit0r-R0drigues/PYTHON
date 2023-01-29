@@ -167,17 +167,31 @@ lista = [ a1, a2, a3, a4, a5 ]
 premiado = random.choice(lista)
 print('O aluno premiado é {}'.format(premiado))'''
 
-a1 = input('aluno 1: ')
+'''a1 = input('aluno 1: ')
 a2 = input('aluno 2: ')
 a3 = input('aluno 3: ')
 a4 = input('aluno 4: ')
 lista = [a1, a2, a3, a4]
 random.shuffle(lista)
-print('a ordem de apresentaçao do trabalho é {}'.format([lista]))
+print('a ordem de apresentaçao do trabalho é {}'.format([lista]))'''
+
+'''nome  = input('Digite seu nome completo: ').strip()
+print('Analisando seu nome...')
+print('Seu nome em letras maiusculas é {}'.format(nome.upper()))
+print('Seu nome em letras minusculas é {}'.format(nome.lower()))
+print('Seu nome tem {} letras '.format(len(nome) - nome.count(' ') ))
+#print('Seu primeiro nome tem {} letras'.format(nome.find('')))
+separado = nome.split()
+print('Seu primeiro nome tem {} e tem {} letras'.format(separado[0], len(separado[0])))'''
 
 
-
-
-
-
-
+'''num = int(input('Digite um numero: '))
+u = num // 1 % 10
+d = num // 10 % 10
+c = num // 100 % 10
+m = num // 1000 % 10
+print('Analisando seu {}'.format(num))
+print('Unidades: {}'.format(u))
+print('Dezena {}'.format(d))
+print('Centena {} '.format(c))
+print('Milhar {} '.format(m))'''
