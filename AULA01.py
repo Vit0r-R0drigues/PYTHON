@@ -2,6 +2,7 @@ import random
 import math
 import pygame
 import emoji
+import time
 
 
 '''print(emoji.emojize("ola, mundo :earth_americas:", language='alias'))'''
@@ -35,7 +36,7 @@ print(f'o valor do desconto sera de {w}')'''
 
 '''a = int(input('Qual a sua idade?'))
 
-if (a < 16):
+if (a <= 16):
     print('Voce é jovem')
 elif (a == 16 < 18):
     print('voce é Emancipado')
@@ -190,8 +191,68 @@ u = num // 1 % 10
 d = num // 10 % 10
 c = num // 100 % 10
 m = num // 1000 % 10
-print('Analisando seu {}'.format(num))
+print('Analisandow seu {}'.format(num))
 print('Unidades: {}'.format(u))
 print('Dezena {}'.format(d))
 print('Centena {} '.format(c))
 print('Milhar {} '.format(m))'''
+
+'''cid = str(input('Em qual cidade você nasceu ? ')).strip()
+print(cid[:5].upper() == 'SANTO')'''
+
+'''nome = str(input('Qual seu nome ? ')).strip()
+print('seu nome tem silva ? {} '.format('silva' in nome.lower()))'''
+
+num = int(input('Digite um numero: '))
+print('processando....')
+sleep(3)
+pc = random.randint(0,5)
+if (num < pc):
+    print('Parabens você ganhou {}'.format(emoji.emojize(":1st_place_medal:")))
+    print('-=-' * 25)
+elif (num == pc):
+    print('Foi empate vamos novamente {} que vença o melhor {}'.format(emoji.emojize(':grin:'), emoji.emojize(':smirk:')))
+    print('-=-' * 25)
+else:
+    print('A maquina ganhou,{} mas sorte na proxima {}'.format(emoji.emojize(':1st_place_medal:'), emoji.emojize(':wink:')))
+    print('-=-' * 25)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
