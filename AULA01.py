@@ -203,7 +203,7 @@ print(cid[:5].upper() == 'SANTO')'''
 '''nome = str(input('Qual seu nome ? ')).strip()
 print('seu nome tem silva ? {} '.format('silva' in nome.lower()))'''
 
-num = int(input('Digite um numero: '))
+'''num = int(input('Digite um numero: '))
 print('processando....')
 sleep(3)
 pc = random.randint(0,5)
@@ -215,13 +215,15 @@ elif (num == pc):
     print('-=-' * 25)
 else:
     print('A maquina ganhou,{} mas sorte na proxima {}'.format(emoji.emojize(':1st_place_medal:'), emoji.emojize(':wink:')))
-    print('-=-' * 25)
+    print('-=-' * 25)'''
 
 
-
-
-
-
+velocidade =  int(input('qual a velocidade de seu carro ao utrapassar a br 116: '))
+if (velocidade <= 80):
+    print('Parabens você está dirigindo a {}km/h a uma velocidade abaixo ou igual ao permitido 80km/h  bem, continue com cuidade '.format(velocidade))
+elif (velocidade > 80):
+    multa = (velocidade - 80) * 7
+    print('Pela sua impudência no volante viajando a uma velocidade de {}km/h levou uma multa de {} para que da proxima vez nao utrapasse o limite permitido.'.format(velocidade, multa,))
 
 
 
