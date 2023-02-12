@@ -3,7 +3,7 @@ import math
 import pygame
 import emoji
 import time
-
+import mysql
 
 '''print(emoji.emojize("ola, mundo :earth_americas:", language='alias'))'''
 
@@ -218,12 +218,12 @@ else:
     print('-=-' * 25)'''
 
 
-velocidade =  int(input('qual a velocidade de seu carro ao utrapassar a br 116: '))
+'''velocidade =  int(input('qual a velocidade de seu carro ao utrapassar a br 116: '))
 if (velocidade <= 80):
     print('Parabens você está dirigindo a {}km/h a uma velocidade abaixo ou igual ao permitido 80km/h  bem, continue com cuidade '.format(velocidade))
 elif (velocidade > 80):
     multa = (velocidade - 80) * 7
-    print('Pela sua impudência no volante viajando a uma velocidade de {}km/h levou uma multa de {} para que da proxima vez nao utrapasse o limite permitido.'.format(velocidade, multa,))
+    print('Pela sua impudência no volante viajando a uma velocidade de {}km/h levou uma multa de {} para que da proxima vez nao utrapasse o limite permitido.'.format(velocidade, multa,))'''
 
 
 
