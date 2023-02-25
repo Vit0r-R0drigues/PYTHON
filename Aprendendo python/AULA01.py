@@ -1,9 +1,8 @@
 import random
 import math
-import pygame
-import emoji
+#import pygame
 import time
-import mysql
+#import mysql
 
 '''print(emoji.emojize("ola, mundo :earth_americas:", language='alias'))'''
 
@@ -224,6 +223,120 @@ if (velocidade <= 80):
 elif (velocidade > 80):
     multa = (velocidade - 80) * 7
     print('Pela sua impudência no volante viajando a uma velocidade de {}km/h levou uma multa de {} para que da proxima vez nao utrapasse o limite permitido.'.format(velocidade, multa,))'''
+
+
+'''for Regressiva in range(10, -1, -1):
+    print(Regressiva)
+    time.sleep(1)
+print('BUM BUM ACABOU!!!!')'''
+
+
+'''for par in range(0, 51,):
+    if par % 2 == 0:
+        print(par, end=' ')
+        time.sleep(0.5)'''
+
+
+for impar in range(1, 501, 2):
+    print(impar)
+    time.sleep(0.5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
