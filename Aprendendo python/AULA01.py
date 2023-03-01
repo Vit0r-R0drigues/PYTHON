@@ -2,6 +2,8 @@ import random
 import math
 #import pygame
 import time
+from datetime import date
+
 #import mysql
 
 '''print(emoji.emojize("ola, mundo :earth_americas:", language='alias'))'''
@@ -202,6 +204,7 @@ print(cid[:5].upper() == 'SANTO')'''
 '''nome = str(input('Qual seu nome ? ')).strip()
 print('seu nome tem silva ? {} '.format('silva' in nome.lower()))'''
 
+
 '''num = int(input('Digite um numero: '))
 print('processando....')
 sleep(3)
@@ -237,9 +240,234 @@ print('BUM BUM ACABOU!!!!')'''
         time.sleep(0.5)'''
 
 
-for impar in range(1, 501, 2):
-    print(impar)
-    time.sleep(0.5)
+'''soma = 0
+cont = 0
+for impar in range(1, 1001, 2):
+    if impar % 3 == 0:
+        cont = cont + 1
+        soma = soma + impar
+print('A soma de todos os {} valores impares de 1 ate 500 é {}'.format(cont, soma))'''
+
+
+'''n = int(input('Digite um numero para a tabuada: '))
+for tabu in range(1, 11):
+    print(f'{n} x {tabu} = {n * tabu}')'''
+
+
+'''cont = 0
+soma = 0
+for num in range(1, 7):
+    n = int(input('Digite u numero: '))
+    if n % 2 == 0:
+        soma += n
+        cont += 1
+print('A soma de todos os {} numeros pares é: {}'.format(cont, soma))'''
+
+'''num = int(input('Digite um numero: '))
+tot = 0
+for prim in range(1, num +1):
+    if num % prim == 0:
+        tot += 1
+        print('\033[32m', end=' ')
+    else:
+        print('\033[31m', end=' ')
+    print('{}'.format(prim), end=' ')
+print('\n\033[mO numero {}  foi divisivel {} vezes'.format(num, tot))
+if tot == 2:
+    print('\033[36mO numero {} é PRIMO'.format(num))
+else:
+    print('\033[31mO numero {} não é PRIMO'.format(num))'''
+
+
+'''frase = str(input('Digite uma frase: ')).strip().upper()
+palavras = frase.split()
+junto = ''.join(palavras)
+inverso = ''
+for poli in range(len(junto) -1, -1, -1):
+    inverso += junto[poli]
+print(junto, inverso)
+if inverso == frase:
+    print('\033[36mA frase é um palindro')
+else:
+    print('\033[31mA frase não é um palindro')'''
+
+atual = date.today().year
+idadeatual = 0
+maioridade = 0
+menoridade = 0
+idosidade = 0
+maiorpeso = 0
+menorpeso = 0
+IMC = 0
+IGC = 0
+for id in range(1, 2):
+    print('---- {}º Pessoal ----'.format(id))
+    nome = str(input('Qual seu nome ? ')).strip().upper()
+    sexo = str(input('Qual seu sexo: ')).strip()
+    nasc = int(input('Em que ano você nasceu ? '))
+    peso = float(input('Qual seu peso: '))
+    altura = float(input('Qual sua altura: '))
+    if 'M' or 'm':
+        sexo = 1
+    elif 'F' or 'f':
+        sexo = 0
+    idade == atual - nasc
+    idadeatual = atual - nasc
+    IMC = peso / altura * altura
+    IGC = (1.20 * IMC) + (0.23 * idadeatual) - (10.8 * sexo) - 5.4
+    if idade <=18:
+        menoridade += 1
+    elif idade <= 60:
+        maioridade +=1
+    else:
+        idosidade += 1
+    if id == 1:
+        maiorpeso = peso
+        menorpeso = peso
+    else:
+        if peso > maiorpeso:
+            maiorpeso = peso
+        if peso < menorpeso:
+            maiorpeso = peso
+
+print('Olá {} prazer em te conhecer\n você tem {} ano(s) de idade\n sua altura é de {}\n e seu peso é de {}Kg\n Você é {}.'.format(nome, idadeatual, altura, peso, idade))
+print('{}\n seu indice de gordura corporal é {}\n seu indice de massa corporal é {}'.format(nome, IGC, IMC))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+num = int
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
