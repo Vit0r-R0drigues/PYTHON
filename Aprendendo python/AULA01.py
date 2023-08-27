@@ -291,7 +291,8 @@ if inverso == frase:
 else:
     print('\033[31mA frase não é um palindro')'''
 
-atual = date.today().year
+'''atual = date.today().year
+idade = 0
 idadeatual = 0
 maioridade = 0
 menoridade = 0
@@ -311,7 +312,7 @@ for id in range(1, 2):
         sexo = 1
     elif 'F' or 'f':
         sexo = 0
-    idade == atual - nasc
+    idade += nasc
     idadeatual = atual - nasc
     IMC = peso / altura * altura
     IGC = (1.20 * IMC) + (0.23 * idadeatual) - (10.8 * sexo) - 5.4
@@ -331,8 +332,7 @@ for id in range(1, 2):
             maiorpeso = peso
 
 print('Olá {} prazer em te conhecer\n você tem {} ano(s) de idade\n sua altura é de {}\n e seu peso é de {}Kg\n Você é {}.'.format(nome, idadeatual, altura, peso, idade))
-print('{}\n seu indice de gordura corporal é {}\n seu indice de massa corporal é {}'.format(nome, IGC, IMC))
-
+print('{}\n seu indice de gordura corporal é {}\n seu indice de massa corporal é {}'.format(nome, IGC, IMC))'''
 
 
 
