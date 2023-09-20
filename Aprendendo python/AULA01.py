@@ -1,8 +1,11 @@
 import random
+from random import randint
 import math
 #import pygame
-import time
+#import time
 from datetime import date
+
+#import emoji
 
 #import mysql
 
@@ -291,6 +294,7 @@ if inverso == frase:
 else:
     print('\033[31mA frase não é um palindro')'''
 
+#IMC
 '''atual = date.today().year
 idade = 0
 idadeatual = 0
@@ -332,270 +336,156 @@ for id in range(1, 2):
             maiorpeso = peso
 
 print('Olá {} prazer em te conhecer\n você tem {} ano(s) de idade\n sua altura é de {}\n e seu peso é de {}Kg\n Você é {}.'.format(nome, idadeatual, altura, peso, idade))
-print('{}\n seu indice de gordura corporal é {}\n seu indice de massa corporal é {}'.format(nome, IGC, IMC))'''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-num = int
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print('{}\n seu indice de gordura corporal é {}\n seu indice de massa corporal é {}'.format(nome, IGC, IMC)'''
+
+
+
+'''Nome = str(input('Digite seu nome: ')).strip().upper()
+Idade = str(input('Digite sua idade: ')).strip().upper()
+Sexo = str(input('Digite seu Sexo [M/F]: ')).strip().upper()
+while Sexo not in 'MmFf':
+    Sexo = str(input('Desculpe dados invalidos tente novamente seu Sexo [M/F]: ')).strip().upper()
+if Sexo == 'M' or 'm':
+    Sexo = 'Masculino'
+elif Sexo == 'F' or 'f':
+    Sexo = 'Feminino'
+print('-=-' * 25)
+print(f'Seu nome é {Nome}, Voce tem {Idade} anos e seu Sexo é {Sexo}')
+print('-=-' * 25)'''
+
+
+#Jogo
+'''computador = randint (0,10)
+emoj = emoji.emojize(':rosto_sorridente_com_olhos_sorridentes:',language = 'pt')
+Ganhador = emoji.emojize(':medalha_de_ouro:',language = 'pt')
+Legal = emoji.emojize(':rosto_abraçando:',language = 'pt')
+Jogo = emoji.emojize(':caça-níquel:',language = 'pt')
+Quase = emoji.emojize(':rosto_fazendo_sinal_de_silêncio:',language = 'pt')
+PC = emoji.emojize(':computador_de_mesa:',language = 'pt')
+print(f'Sou seu Computador{PC}, e voce esta no jogo{Jogo} da advinhação, vamos jogar {emoj}')
+print(f'Será que você me ganha ?{emoj}')
+Acertou = False
+Palpite = 0
+while not Acertou:
+    Jogador = int(input('Qual seu palpite: '))
+    Palpite += 1
+    if Jogador == computador:
+        Acertou = True
+    else:
+        if Jogador < computador:
+            print(f'Mais.. tente novamente {Quase}')
+        elif Jogador > computador:
+            print(f'Menos.. tente novamente {Quase}')
+print(f'Parabens {Ganhador} voce acertou com {Palpite} Palpites{emoj}')'''
+
+
+''''num = tentativas = soma = 0
+num = int(input('Digite o codigo [999 para parar]: '))
+while num != 999:
+    tentativas += 1
+    soma += num
+    num = int(input('Digite o codigo [999 para parar]: '))
+print(f"O numero de tentaivas foi de {tentativas} para encerrar o programa, e a soma deste numeros foi de {soma} ")'''
+
+
+
+'''n = total = cont = 0
+while n != 999:
+    n = int(input('Digite um número inteiro ou 999 para parar: '))
+    if n != 999:
+        total += n
+        cont += 1
+print('Foram digitados {} números e a soma entre eles foi {}'.format(cont, total))'''
+
+
+'''txtInicio = '\033[35;41;1m'
+txtFim = '\033[35;47m'
+txtSem = '\033[0m'
+txtNegSub = '\033[4;1m'
+
+print( txtNegSub,' Vamos ao Valores', txtNegSub)
+
+Quantidade = 0
+opção = 'S'
+total = 0
+media = 0
+soma = menor = maior = 0
+while opção not in 'N':
+    if opção == 'S':
+        num = int(input('Tecle um numero: '))
+        soma += num
+        Quantidade += 1
+        if Quantidade == 1:
+            maior = menor = num
+        else:
+            if num > maior:
+                maior = num
+            if num < menor:
+                menor = num
+    opção = str(input('Dseja continuar [S/N] ')).strip().upper()
+media += soma / Quantidade
+print(f'Voce digitou {Quantidade}, que somados dao um total de {soma}, com media total de {media}\n onde o maior valor é {maior} e o menor valor é {menor} ')'''
+
+
+'''num = tentativas = soma = 0
+while True:
+    num = int(input('Digite o codigo [999 para parar]: '))
+    if num == 999:
+        break
+    tentativas += 1
+    soma += num
+print(f'O numero de tentaivas foi de {tentativas} para encerrar o programa, e a soma deste numeros foi de {soma}')'''
+
+
+'''print('=' * 25)
+print('Vamos a tabuada.....')
+print('=' * 25)
+time.sleep(3)
+print('=' * 25)
+print('Qual tabuada voce vai escolher ?...')
+print('=' * 25)
+time.sleep(3)
+while True:
+    tabu = int(input('Digite um numero para calcularmos a sua tabuada: '))
+    if tabu < 0:
+        break
+    print(f'A sua tabuada escolhida foi de numero {tabu} que fica igual a:')
+    print('===' * 25)
+    print('Calculando......')
+    time.sleep(2)
+    for c in range(1, 11):
+        print('===' * 25)
+        print(f'{c} X {tabu} = {c * tabu}')
+        print('===' * 25)
+print('Tabuada encerrada.')'''
+
+
+'''while True:
+    jogador =  int(input('Pense em um numero: '))
+    print('***'* 30)
+    print('Computador pensando..... hum.. já sei ...')
+    print('***' * 30)
+    computador = random.randint(0, 10)
+    total = jogador + computador
+    tipo = ' '
+    while tipo not in 'PpIi':
+        tipo = str(input('Impar ou Par escolha sua Opção: P/I -->  '))
+    print(f'Você jogou {jogador} e o computador {computador} o total foi de {total}')
+    print('DEU PAR' if total % 2 == 0 else 'DEU IMPAR')
+    if tipo == 'P':
+        if total % 2 == 0:
+            print('Parabens voce ganhou deu PAR')
+        else:
+            print('Você perdeu, mais sorte na proxima!')
+            break
+    elif tipo == 'I':
+        if total % 2 == 1:
+            print('Parabens voce ganhou deu PAR')
+        else:
+            print('Você perdeu, mais sortes na proxima!')
+            break
+        print('Vamos jogar nvamente.....')'''
+
+
+while True:
+    nome = str(input)
